@@ -2,9 +2,9 @@ name: CI_action
 
 on:
   push:
-   branches: [main]
+   branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
@@ -24,13 +24,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      working-directory: C:/Users/Admin/CISE_Repo/CISE_React/CISE_Worksheet2/cise_ass1a_worksheet2-frontend
+      working-directory: cise_ass1a_worksheet2-frontend
       run: npm install
 
     - name: Run the tests
-      working-directory: C:/Users/Admin/CISE_Repo/CISE_React/CISE_Worksheet2/cise_ass1a_worksheet2-frontend
+      working-directory: cise_ass1a_worksheet2-frontend
       run: npm test
 
     - name: Build
-      working-directory: C:/Users/Admin/CISE_Repo/CISE_React/CISE_Worksheet2/cise_ass1a_worksheet2-frontend
+      working-directory: cise_ass1a_worksheet2-frontend
       run: npm run build 

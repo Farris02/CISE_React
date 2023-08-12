@@ -29,4 +29,4 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_SECRET }}
-        run: npx vercel --token $VERCEL_TOKEN --prod
+        run: npx vercel --token $VERCEL_TOKEN --prod --confirm

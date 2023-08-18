@@ -1,4 +1,4 @@
-import "C:/Users/Admin/CISE_Repo/CISE_React/CISE_Worksheet4/frontend/src/styles/global.scss";
+import "../styles/global.scss";
 import type { AppProps } from "next/app";
 import { SessionProvider } from "next-auth/react";
 import PopulatedNavBar from "../components/PopulatedNavBar";
